@@ -1,17 +1,27 @@
-<h4>Ventas</h4>
 <div>
-    <ng-container>
-        <div style="display: block">
-            <canvas baseChart
-            [data]="barChartData"
-            [options]="barChartOptions"
-            [plugins]="barChartPlugins"
-            [type]="barChartType">
-            </canvas>
-          </div>
-          <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
-    </ng-container>
+    <mat-card>
+        <mat-card-title>
+            <mat-label> Sales </mat-label>
+        </mat-card-title>
+    </mat-card>
 </div>
+
+<mat-card>
+    <div>
+        <ng-container>
+            <div style="display: block">
+                <canvas baseChart
+                [data]="barChartData"
+                [options]="barChartOptions"
+                [plugins]="barChartPlugins"
+                [type]="barChartType">
+                </canvas>
+              </div>
+              <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+        </ng-container>
+    </div>
+</mat-card>
+
 
 
     
