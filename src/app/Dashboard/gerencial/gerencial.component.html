@@ -1,11 +1,18 @@
-<p>gerencial works!</p>
+<h4>Ventas</h4>
+<div>
+    <ng-container>
+        <div style="display: block">
+            <canvas baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [type]="barChartType">
+            </canvas>
+          </div>
+          <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+    </ng-container>
+</div>
 
-<!-- <ngx-charts-advanced-pie-chart 
-[view]="view" 
-[scheme]="colorScheme" 
-[results]="single" 
-[gradient]="gradient" 
-(select)="onSelect($event)" 
-(activate)="onActivate($event)" 
-(deactivate)="onDeactivate($event)">
-</ngx-charts-advanced-pie-chart> -->
+
+    
+
