@@ -13,17 +13,7 @@ export class GerencialComponent {
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
     // We use these empty structures as placeholders for dynamic theming.
-    scales: {
-      x: {},
-      y: {
-        min: 10
-      }
-    },
-    plugins: {
-      legend: {
-        display: true,
-      }
-    }
+    
   };
   public barChartType: ChartType = 'bar';
   public barChartPlugins = [
@@ -38,27 +28,17 @@ export class GerencialComponent {
     ]
   };
 
-  // // events
-  // public chartClicked({ event, active }: { event?: ChartEvent, active?: {}[] }): void {
-  //   console.log(event, active);
-  // }
 
-  // public chartHovered({ event, active }: { event?: ChartEvent, active?: {}[] }): void {
-  //   console.log(event, active);
-  // }
+  
 
-  public randomize(): void {
-    // Only Change 3 values
-    this.barChartData.datasets[0].data = [
-      Math.round(Math.random() * 100),
-      59,
-      80,
-      Math.round(Math.random() * 100),
-      56,
-      Math.round(Math.random() * 100),
-      40 ];
-
-    this.chart?.update();
-  }
+   // Doughnut
+   public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
+   public doughnutChartData: ChartData<'doughnut'> = {
+     labels: this.doughnutChartLabels,
+     datasets: [
+       { data: [ 50, 50, 25 ] }
+     ]
+   };
+   public doughnutChartType: ChartType = 'doughnut';
 
 }

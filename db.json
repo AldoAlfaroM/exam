@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "product": "Producto 1",
+      "total": 1755.81
+    },
+    {
+      "product": "Producto 2",
+      "total": 1108.14
+    },
+    {
+      "product": "Producto 3",
+      "total": 1736.34
+    },
+    {
+      "product": "Producto 4",
+      "total": 604.21
+    }
+  ],
+  "services": [
+    {
+      "service": "Servicio 1",
+      "total": 1351.07
+    },
+    {
+      "service": "Servicio 2",
+      "total": 1540.29
+    },
+    {
+      "service": "Servicio 3",
+      "total": 1117.24
+    },
+    {
+      "service": "Servicio 4",
+      "total": 1067.52
+    },
+    {
+      "service": "Servicio 5",
+      "total": 1549.87
+    },
+    {
+      "service": "Servicio 6",
+      "total": 1338.59
+    },
+    {
+      "service": "Servicio 7",
+      "total": 1542.17
+    },
+    {
+      "service": "Servicio 8",
+      "total": 1106.13
+    },
+    {
+      "service": "Servicio 9",
+      "total": 1221.24
+    },
+    {
+      "service": "Servicio 10",
+      "total": 1705.31
+    },
+    {
+      "service": "Servicio 11",
+      "total": 1240.68
+    },
+    {
+      "service": "Servicio 12",
+      "total": 620.63
+    }
+  ]
+}
